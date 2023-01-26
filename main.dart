@@ -1,19 +1,11 @@
-
-bool toplevel = true;
-
 void main() {
-  var insideMain = true;
+  var addNumero = (int i) {
+    return (int y) => i + y;
+  };
 
-  void myFunction() {
-    var insiderFunction = true;
+  var addNumero2 = addNumero(2);
 
-    void mastedFunction() {
-      var insiderNestedFunction = true;
+  var resultado = addNumero2(5);
 
-      assert(toplevel);
-      assert(insideMain);
-      assert(insiderFunction);
-      assert(insiderFunction);
-    }
-  }
+  print(resultado);
 }
