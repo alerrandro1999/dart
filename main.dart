@@ -3,14 +3,26 @@ void main() {
   // is!
   // as3
 
-  final numero = 0
+  final numero = 0;
 
-  print(int is Object);
-  print(double is Object);
-  print(num is Object);
-  print(String is Object);
-  print(bool is Object);
+  // print(int is Object);
+  // print(double is Object);
+  // print(num is Object);
+  // print(String is Object);
+  // print(bool is Object);
+
+  // print(numero is int);
+  // print(numero is! int);
+
+  dynamic produto = Item();
+  print((produto as Produto).nome );
 
 }
 
-https://youtu.be/AqqRB2ATZ6I?list=PLK5FPzMuRKlyiWZUUqea2Hmszhy9vUixJ&t=147
+class Produto {
+  final nome = 'mouse';
+}
+
+class Item extends Produto{
+  final nome = "Teclado";
+}
