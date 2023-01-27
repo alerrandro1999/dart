@@ -1,28 +1,24 @@
 void main() {
-  // is
-  // is!
-  // as3
+  // =
+  // +=
+  // -= 
+  // *=
+  // /=
+  // %=
+  // ~/=
+  // ??= 
 
-  final numero = 0;
+  var numero = getNumero();
 
-  // print(int is Object);
-  // print(double is Object);
-  // print(num is Object);
-  // print(String is Object);
-  // print(bool is Object);
+  // numero = numero + 10;
+  // numero += 10;
 
-  // print(numero is int);
-  // print(numero is! int);
 
-  dynamic produto = Item();
-  print((produto as Produto).nome );
+  numero ??= 50;
+
+
+  print(numero);
 
 }
 
-class Produto {
-  final nome = 'mouse';
-}
-
-class Item extends Produto{
-  final nome = "Teclado";
-}
+int? getNumero() => null;
