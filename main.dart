@@ -1,12 +1,19 @@
 void main() {
-  final idade = 11;
+  
+  final listaNomes = ['ale', 'alerrandro'];
 
-  if(idade >= 18){
-    print("maior de idade");
-  }else if(idade >= 13) {
-    print("adolecente");
-  }
-  else {
-    print("menor de idade");
-  }
+  // for(var indice = 0; indice < listaNomes.length; indice++) {
+  //   print(listaNomes[indice]);
+  // }
+
+  // for(var nome in listaNomes){
+  //   print(nome);
+  // }
+
+  listaNomes.forEach(imprimirValor);
+
+}
+
+void imprimirValor(String valor) {
+  print(valor);
 }
