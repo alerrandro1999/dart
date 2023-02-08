@@ -1,24 +1,14 @@
 void main() {
-  // =
-  // +=
-  // -= 
-  // *=
-  // /=
-  // %=
-  // ~/=
-  // ??= 
 
-  var numero = getNumero();
+    // bool conteudo = true;
 
-  // numero = numero + 10;
-  // numero += 10;
+    // final resultado = conteudo ? 'publico' : 'privado';
 
+    String? conteudo = getConteudo();
 
-  numero ??= 50;
+    final resultado = conteudo ?? 'Estuda Dart';
 
-
-  print(numero);
-
+    print(resultado);
 }
 
-int? getNumero() => null;
+String? getConteudo() => null;
